@@ -1,0 +1,204 @@
+@import 'var.scss';
+@import 'mixin.scss';
+.header{
+    margin-bottom: 47px;
+    padding-top: 21px;
+}
+
+.header_fixed{
+position: fixed;  
+top: 0;  
+left: 0;
+z-index: 100; 
+width: 100%; 
+animation-name: header;
+animation-duration: .2s;
+background-color: $mainColorBlack;
+padding: 10px 0;
+}
+@keyframes header {
+    0%{
+        opacity: 0;
+        top: -100px;
+    }
+    100%{
+        opacity: 1;
+        top: 0;
+    }
+}
+  
+.hero-picture{
+    background: url('images/blockHero3.webp'), linear-gradient(180deg, rgba(31,31,30,1) 0%, rgba(31,31,30,0) 15%, rgba(31,31,30,0) 80%, rgba(31,31,30,1) 100%);
+    background-blend-mode: saturation;
+    background-size: cover;
+    color: $maincolorWhite;
+}
+
+.header__nav__link{
+    @include sectionMainFont;
+    font-size: $mainTextSize;
+    color: $maincolorWhite;
+}
+
+.section-hero__heading{
+    @include sectionHeadFont;
+    font-size: $mainHeadSize;
+    margin: 0;
+}
+
+.header__container{
+    @include flex;
+    justify-content: space-between;
+    min-height: 115px;
+}
+
+.list_flex{
+    @include flex;
+    gap: 100px;
+}
+
+.link{
+text-decoration: none;
+transition: .2s ease-in;
+}
+
+.link:hover{
+color: $sidebarColor;
+transition: .2s ease-in;
+}
+
+.header__nav__burger {
+display: none;
+cursor: pointer;
+}
+
+/* БУРГЕР ИКОНКА ЗАКРЫТИЯ */
+.header__nav__burger_open{
+position: relative;
+}
+
+.header__nav__burger__icon{
+transition: transform 0.2s ease-in;
+}
+
+.header__nav__burger_open .header__nav__burger__icon:nth-child(1){
+position: absolute;
+top: 0;
+transform: rotate(38deg);
+}
+
+.header__nav__burger_open .header__nav__burger__icon:nth-child(2){
+opacity:0; 
+}
+
+.header__nav__burger_open .header__nav__burger__icon:nth-child(3){
+position: absolute;
+top: 0;
+transform: rotate(-38deg);
+}
+/*--*/
+
+.header__nav__burger__icon {
+display: block;
+width: 30px;
+height: 5px;
+background-color: $maincolorWhite;
+margin-bottom: 5px;
+border-radius: 1.5px;
+}
+
+
+/* ШАПКА АДАПТИВ */
+
+@media screen and (max-width: 860px) {
+.header__container{
+    flex-direction: column;
+}
+.header__logo{
+    margin: 0 auto;
+}
+}
+
+@media screen and (max-width: 640px) {
+
+.hero-picture{
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.header__container{
+    flex-direction: row;
+    min-height: auto;
+}
+.header__logo{
+    margin: 0;
+    margin-right:auto;
+}
+
+.header__nav__burger {
+    display: block;
+    width: 100%;
+}
+
+.list_flex{
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 30px 10px;
+    height: 100vh;
+    width: 50%;
+    background-color: $mainColorBlack;
+    transition: transform .4s ease-in-out;
+    transform: translateX(-101%);
+}
+
+.header__nav__list_open{
+    transform: none;
+    overflow: auto;
+}
+
+.list__item{
+    height: 30px;
+}
+
+.list__item_price{
+    height: 30px;
+}
+
+// .fixed-page{
+//     overflow: hidden;
+// }  
+}
+
+@media screen and (max-width: 400px) {
+.list__item{
+    height: 20px;
+}
+.list__item_price{
+    height: 20px;
+}
+
+.header__logo__img{
+    height: 80px;
+}
+.header__nav__burger__icon {
+    display: block;
+    width: 25px;
+    height: 3px;
+}
+.header__nav__link{
+    font-weight: 800;
+}
+
+}
+
+@media screen and (max-width: 320px) {
+.list_flex{
+    width: 70%;
+}
+}

@@ -1,0 +1,154 @@
+@import 'var.scss';
+@import 'mixin.scss';
+
+.section-cases{
+    padding-top: 95px;
+    padding-bottom: 81px;
+    background-color: $mainColorBlack;
+    background-image: url(images/scales.png), url(images/list.png);
+    background-repeat: no-repeat;
+    background-position: 106%, 0px 107%;
+}
+
+.heading-gradient_noGradient{
+    margin-bottom: 15px;
+    color: $maincolorWhite;
+    background: none;
+    -webkit-text-fill-color: $maincolorWhite;
+}
+
+.swiper{
+    width: 100%;
+    height: auto;
+}
+
+.case{
+    width: 100%;
+    max-height: 411px;
+    padding: clamp(10px, 1.5vw, 20px);
+    background-color: $maincolorWhite;
+    @include flex;
+    gap: clamp(50px, 10vw, 136px);
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+
+    &__category{
+        @include sectionHeadFont;
+        line-height: 120%;
+        font-style: normal;
+        padding: clamp(50px, 11.4vw, 161px) clamp(10px, 2.3vw, 32px) clamp(50px, 10vw, 140px) clamp(10px, 2.3vw, 32px);
+        border-radius: 4px;
+        text-align: center;
+        font-size: $headingCaseCategory;
+        background-image: url(images/ramka.webp);
+        background-repeat: no-repeat;
+        background-size: contain;
+        white-space: pre-line;
+    }
+
+    &__desc{
+        width: clamp(417px, 60vw, 834px);
+        max-height: 376px;
+    }
+
+    &__def{
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-size: $headingCaseCategory;
+        line-height: 120%;
+        color: $mainColorBlack;
+        margin-bottom: 10px;
+    }
+
+    &__mean{
+        @include sectionMainFont;
+        line-height: 140%;
+        font-size: $secondTextSize;
+        color: $mainColorBlack;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+}
+
+.switch{
+    @include flex;
+    gap: 20px;
+    justify-content: center;
+    &__wrap{
+        padding: 11px 11.5px 8px 11.5px;
+        border-radius: 100%;
+        border: 1px solid $maincolorWhite;
+        color: $maincolorWhite;
+        cursor: pointer;
+        transition: all .2s ease-in;
+    }
+
+    &__wrap:hover{
+        color: $mainColorBlack;
+        background-color: $maincolorWhite;
+        transition: all .2s ease-in;
+    }
+
+    &__button{
+        width: 15px;
+        height: 16px;
+    }
+
+    &__button_next{
+        transform: rotate(180deg);
+    }
+
+}
+
+@media screen and (max-width: 784px) {
+    .case{
+        max-height: none;
+    }
+
+}
+
+@media screen and (max-width: 676px) {
+
+    .section-cases{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: $mainColorBlack;
+        background-image: url(images/scales.png), url(images/list.png);
+        background-size: 170%, 40%;
+        background-repeat: no-repeat;
+        background-position: 20% 100%, 0px 107%;
+    }
+    
+
+    .case{
+        display: block;
+        
+        &__desc{
+            width: auto;
+            max-height: 376px;
+        }
+
+        &__category{
+            float: left;
+            padding-inline: 10px;
+            background: none;
+        }
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .case{
+        &__category{
+            float: none;
+            padding: 0;
+            white-space: unset;
+        }
+    }
+
+}

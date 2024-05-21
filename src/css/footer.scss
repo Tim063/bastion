@@ -1,0 +1,43 @@
+@import 'var.scss';
+@import 'mixin.scss';
+.footer{
+    background-color: $footerColorBlack;
+    padding-block: 30px;
+
+    &__container{
+        display: flex;
+        gap: 40px;
+    }
+
+    &__contacts{
+        @include flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 17px;
+        column-gap: 53px;
+        &__link{
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-size: $headingCaseCategory;
+            line-height: 100%;
+            color: $maincolorWhite;
+            transition: .2s ease-in;
+        }
+        &__link_grey{
+            color: $textGray;
+        }
+
+        &__link:hover{
+            color: $sidebarColor;
+            transition: .2s ease-in;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 450px) {
+    .footer__logo{
+        display: none;
+    }
+}

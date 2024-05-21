@@ -1,0 +1,11 @@
+@import 'var.scss';
+@import 'mixin.scss';
+.paper-bg{
+    @include paperBg;
+}
+
+@media screen and (max-width: 450px) {
+    .paper-bg{
+        background-size: contain;
+    }
+}

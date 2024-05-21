@@ -1,0 +1,129 @@
+@import 'var.scss';
+@import 'mixin.scss';
+.section-about{
+    padding-top: 100px;
+    margin-bottom: 200px;
+    overflow: hidden;
+    position: relative;
+    &::before{
+        content: url(images/gerb.png);        
+        position: absolute;
+        width: clamp(186px, 35vw, 372px);
+        height: clamp(202px, 35vw, 404px);
+        top: 18%;
+        right: -2%;
+    }
+    &__desc{
+        padding-top: 10px;
+        border-top: 2px solid $mainColorBlack;
+        &__heading{
+            @include sectionMainFont;
+            font-weight: 700;
+            font-size: $mainTextSize;
+            line-height: 140%;
+            color: $mainColorBlack;
+            margin: 0;
+            margin-bottom: 21px;
+        }
+
+        &__list{
+            &__item{
+                @include sectionMainFont;
+                font-weight: 400;
+                font-size: $secondTextSize;
+                line-height: 140%;
+                max-width: 795px;
+                padding-left: 60px;
+                background-image: url(images/galka.png);
+                background-repeat: no-repeat;
+                background-position: left top;
+                background-size: 40px 40px;
+                margin-bottom: 20px;
+            }
+
+        }
+
+    }
+
+}
+
+.heading-gradient{
+    @include sectionHeadFont;
+    font-size: $headingGradientSize;
+    @include gradientSecondFont;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.section-about__container{
+    @include flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: clamp(10px, 2vh, 40px);
+}
+
+.section-about__advantages{
+    @include flex;
+    gap: clamp(10px, 3.5vw, 45px);
+    width: auto;
+    white-space: nowrap;
+    &__item{
+        width: clamp(100px, 20vw, 220px);
+        height: clamp(80px, 16vw, 220px);
+        border-radius: 100%;
+        background-color: $mainColorBlack;
+        display: grid;
+        place-items: center;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 95.46%;
+            height: 95.46%;
+            border-radius: 100%;
+            border: 1px solid $maincolorWhite;
+        }
+    }
+
+    &__text{
+        @include sectionMainFont;
+        line-height: 120%; 
+        font-size: clamp(14px, 1.5vw, 20px);
+        color: $maincolorWhite;
+        text-align: center;
+        white-space: pre-line;
+
+        &_strong{
+            @include sectionHeadFont;
+            font-size: $textStrong;
+            text-transform: uppercase;
+            line-height: 140%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .section-about{
+        padding-top: 50px;
+        margin-bottom: 100px;
+    }
+
+}
+
+
+@media screen and (max-width: 640px) {
+
+    .section-about__advantages{
+        flex-direction: column;
+        overflow-x: unset;
+        white-space: wrap;
+        width: 100%;
+
+        &__item{
+            width: 50%;
+            height: 20vh;
+        }
+    }
+}

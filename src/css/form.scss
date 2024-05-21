@@ -1,0 +1,326 @@
+@import 'var.scss';
+@import 'mixin.scss';
+
+.form{
+    background-image: url(images/filterBumaga2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-block: 100px;
+ 
+    &__body{
+        background-color: $maincolorWhite;
+        border-radius: 12px;
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &__desc{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: flex-start;
+        padding-top: 44px;
+        padding-left: 40px;
+        padding-bottom: 48px;
+        overflow: hidden;
+        position: relative;
+        &::before{
+            content: '';
+            background-image: url(images/manConsult.png);   
+            background-repeat: no-repeat;     
+            position: absolute;
+            width: clamp(221px, 35vw, 442px);
+            height: 46vw;
+            top: 0;
+            right: 0;
+            z-index: 1;
+            border-radius: 12px;
+        }
+
+        &__p{
+            font-size: $mainTextSize;
+            white-space: pre-line;
+            line-height: 140%;
+            margin-bottom: 35px;
+            &__strong{
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+        }
+    }
+    &__question{
+        border: none;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 48px;
+
+        &__wrap-heading{
+            @include flex;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        &__number{
+            display: inline-block;
+            @include sectionHeadFont;
+            font-size: clamp(18px, 6.3vw, 90px);
+            padding: clamp(18px, 6.3vw, 44px) 30px 8px 40px;
+            border-bottom-right-radius: 40px;
+            border-right: 1px solid $mainColorBlack;
+            border-bottom: 1px solid $mainColorBlack;
+        }
+
+        &__heading{
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 700;
+            font-size: clamp(14px, 2.1vw, 26px);
+            padding-top: 84px;
+            margin: 0;
+        }
+
+        &__wrap-body{
+            @include flex;
+            column-gap: 10px;
+            justify-content: center;
+            margin-bottom: 92px;
+        }
+
+        &__wrap-body_2{
+            @include flex;
+            gap: 10px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            max-height: 231px;
+        }
+
+        &__wrap-body_3{
+            @include flex;
+            gap: 10px;
+            flex-direction: column;
+            align-items: normal;
+            padding-inline: clamp(5px, 3vw, 40px);
+            text-align: center;
+        }
+
+        &__radio{
+            display: none;
+        }
+
+        &__opisanie{
+            resize: none;
+            @include boxModelInput;
+            @include placeholder;
+            color: $mainColorBlack;
+            border: 1px solid $mainColorBlack;
+            line-height: 100%;
+            &::placeholder{
+                @include placeholder;
+                line-height: 100%;
+            }
+        }
+
+        &__input{
+            @include boxModelInput;
+            @include placeholder;
+            color: $mainColorBlack;
+            padding: clamp(10px, 4vw, 26.5px) clamp(10px, 4vw, 40px);
+            border: 1px solid $mainColorBlack;
+            &::placeholder{
+                @include placeholder;
+            }
+        }
+
+        &__radio + &__radio_custom {
+            background-image: url(images/obvodka.png);
+            background-repeat: no-repeat;
+            min-height: 40px;
+            transition: .2s ease-in;
+            display: grid;
+            place-items: center;
+            justify-content: start;
+            padding-left: 80px;
+            background-color: transparent;
+            position: relative;
+        }
+
+        &__radio:checked + &__radio_custom {
+            transition: .2s ease-in;
+            background-image: url(images/galka.png);
+        }
+
+        &__label{
+            @include sectionMainFont;
+            font-weight: 700;
+            font-size: $secondTextSize;
+            text-transform: uppercase;
+            padding: 14px 15px 14px 40px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 6px;
+            border: 1px solid $mainColorBlack;
+            width: clamp(200px, 45vw, 595px);
+        }
+
+
+        &__wrap-button{
+            @include flex;
+            gap: 10px;
+        }
+
+
+        &__button{
+            display: block;
+            padding: 0;
+            margin: 0;
+            margin-left: auto;
+            margin-right: 40px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 700;
+            font-size: $secondTextSize;
+            text-transform: uppercase;
+            color: $maincolorWhite;
+            padding: clamp(13px, 2vw, 25px) clamp(53px, 8.5vw, 117px);
+            background-color: $mainColorBlack;
+            border: none;
+            border-radius: 6px;
+            transition: .2s ease-in;
+            cursor: pointer;
+        }
+
+        &__button:hover{
+            transform: scale(1.05);
+            transition: .1s ease-in;
+        }
+
+        &__wrap-button>&__button{
+            margin: 0;
+        }
+
+        &__prev{
+            color: $mainColorBlack;
+            background-color: $maincolorWhite;
+            border: 1px solid $mainColorBlack;
+        }
+
+        &__button_dis{
+            background-color: $sidebarColor;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+    }
+
+
+    &__thanks{
+        @include sectionHeadFont;
+        font-size: $headingGradientSize;
+        @include gradientSecondFont;
+        text-align: center;
+
+        margin: 0;
+        padding: clamp(10px, 7vw, 170px) clamp(10px, 2vw, 20px);
+    }
+
+}
+
+
+.form__question:has(input[name="UrStatus"]:checked) .form__question__button_dis1,
+.form__question:has(input[name="usluga"]:checked) .form__question__button_dis2{
+    background-color: $mainColorBlack;
+    cursor: pointer; 
+    pointer-events: auto; 
+}
+
+
+
+.form__question__wrap-body_3>.form__question__wrap-button{
+    margin-left: auto;
+}
+
+.heading-smaller{
+   font-size: clamp(45px, 6.3vw, 90px);
+   max-width: 767px;
+   white-space: pre-line;
+   margin-bottom: 11px;
+}
+
+.link-question{
+    padding: clamp(15px, 2vw, 27px) clamp(25px, 2vw, 50px);
+}
+
+
+@media screen and (max-width: 784px){
+    .form__question__wrap-button{
+        flex-direction: column;
+    }
+    .form__question__wrap-body_2{
+        max-height: 300px;
+    }
+}
+
+@media screen and (max-width: 676px){
+
+
+
+    .form{
+        padding-block: 50px;
+        &__desc{
+            padding: 20px;
+            align-items: center;
+            align-content: center;
+            &::before{
+                display: none;
+            }
+
+            &__p{
+                text-align: center;
+            }
+        }
+    }
+
+    .form__question__wrap-body{
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .form__question__heading{
+        padding-top: 0;
+    }
+
+    .heading-smaller{
+        white-space: unset;
+        text-align: center;
+     }
+}
+
+@media screen and (max-width: 558px){
+    .form__question__wrap-body{
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .form__question__wrap-body>.form__question__label {
+        width: clamp(320px, 45vw, 595px);
+    }
+
+    .form__question__label{
+        padding-left: 10px;
+    }
+    .form__question__radio+.form__question__radio_custom {
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 444px){
+    .form__question__wrap-body_2{
+        max-height: none;
+        flex-wrap: nowrap;
+    }
+
+    .form__question__wrap-body_2>.form__question__label {
+        width: clamp(300px, 45vw, 595px);
+    }
+
+    .form__question__wrap-button{
+        flex-direction: row;
+    }
+
+}

@@ -1,0 +1,70 @@
+@import 'var.scss';
+@import 'mixin.scss';
+.section-contacts{
+    background: $textGray;
+    position: relative;
+    &__map{
+        width: 1280px;
+        height: 670px;
+        margin: 0 auto;
+    }
+}
+
+.contacts-card{
+    position: absolute;
+    top: 14.926%;
+    left: 5.556%;
+    border-radius: 12px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+    background: $maincolorWhite;
+    padding: clamp(10px, 3vw, 40px);
+
+    &__list{
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    &__name{
+        @include sectionMainFont;
+        line-height: 120%;
+        font-size: $secondTextSize;
+        margin-bottom: 6px;
+    }
+
+    &__def{
+        margin: 0;
+        @include sectionMainFont;
+        font-weight: 700;
+        line-height: 120%;
+        font-size: $mainTextSize;
+        white-space: pre-line;
+    }
+
+    &__def:not(:last-child){
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+
+    .contacts-card{
+        left: 16.7%;
+    }
+
+}
+
+@media screen and (max-width: 1440px) {
+
+    .section-contacts__map{
+        width: 100%;
+    }
+
+}
+
+[class*="ground-pane"] {
+    filter: grayscale(1);
+}
+
+[class*="copyrights-pane"] {
+    display: none !important;
+}

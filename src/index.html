@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бастион</title>
+    <link rel="stylesheet" href="swiper.css">
+    <link rel="stylesheet" href="simplebar.css">
+    <link rel="stylesheet" href="aos.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="bastionIco.ico" type="image/x-icon">
+    <meta property="og:title" content="Бастион">
+    <meta property="og:description" content="Юридическая компания Бастион - корпоративное и гражданское право в Тольятти. Опытные юристы оказывают широкий спектр услуг: консультации, составление документов, представительство в суде.">
+    <meta property="og:image" content="https://example.com/image.jpg">
+    <meta property="og:url" content="https://bastionlaw.ru">
+    <meta name="twitter:title" content="Бастион">
+    <meta name="twitter:description" content="Юридическая компания Бастион - корпоративное и гражданское право в Тольятти. Опытные юристы оказывают широкий спектр услуг: консультации, составление документов, представительство в суде.">
+    <meta name="twitter:image" content="https://example.com/image.jpg">
+    <meta name="twitter:card" content="summary">
+    <meta name="robots" content="index, snippet, archive, max-image-preview:standard">
+    <meta name="description" content="Юридическая компания Бастион - корпоративное и гражданское право в Тольятти. Опытные юристы оказывают широкий спектр услуг: консультации, составление документов, уголовный адвокат в суде, ведение бизнеса, банкротство.">
+    <meta name="keywords" content="адвокаты тольятти,  юрист Тольятти, банкротство тольятти, консультация юриста тольятти, юрист бесплатно тольятти, военные юристы тольятти, уголовный адвокат тольятти, жилищный юрист тольятти, бизнес юрист тольятти">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=20ab2a58-3061-493e-a854-cb0ff823fd2c&lang=ru_RU" type="text/javascript"></script>
+    <script defer src="swiper.js"></script>
+    <script defer src="inputmask.min.js"></script>
+    <script defer src="simplebar.js"></script>
+    <script defer src="jquery.js"></script>
+    <script defer src="aos.js"></script>
+    <script defer src="app.js"></script>
+    <script defer="defer" src="swiper.js"></script><script defer="defer" src="inputmask.min.js"></script><script defer="defer" src="simplebar.js"></script><script defer="defer" src="jquery.js"></script><script defer="defer" src="aos.js"></script><script defer="defer" src="app.js"></script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Бастион",
+            "legalName": "Бастион",
+            "slogan": "Защищаем и представляем интересы юридических и физических лиц в арбитражных и федеральных судах, органах государственной власти и органах местного самоуправления.",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Приморский бульвар, 1 «В»",
+                "addressLocality": "Тольятти",
+                "addressRegion": "Самарская область",
+                "postalCode": "445023",
+                "addressCountry": "RU"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 53.50463425336131,
+                "longitude": 49.294920625590734
+            },
+            "areaServed": ["Самарская область"],
+            "email": "mail@bastionlaw.ru",
+            "telephone": "+7 (923) 457-46-60",
+            "keywords": ["адвокаты тольятти", "юридические услуги Тольятти", "юрист Тольятти", "юрист бесплатно тольятти", "бизнес юрист тольятти", "жилищный юрист тольятти", "уголовный адвокат тольятти"],
+            "url": "https://bastionlaw.ru/",
+            "logo": "https://bastionlaw.ru/favicon.png",
+            "image": "https://bastionlaw.ru/screenshot.jpg",
+            "openingHours": "Mo-Fr 09:00-18:00"
+        }
+    </script>
+</head>
+<body>
+    <div class="hero-picture">
+        <header class="header">
+            <div class="container header__container">
+                <div class="header__logo">
+                    <img src="images/bastion.svg" alt="Бастион" class="header__logo__img">
+                </div>
+                <nav class="header__nav">
+                    <div class="header__nav__burger">
+                        <span class="header__nav__burger__icon"></span>
+                        <span class="header__nav__burger__icon"></span>
+                        <span class="header__nav__burger__icon"></span>
+                    </div>
+                    <ul class="list list_flex">
+                        <li class="list__item">
+                            <a href="#about" class="link header__nav__link">О нас</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#services" class="link header__nav__link">Услуги</a>
+                        </li>
+                        <li class="list__item_price">
+                            <a href="#price-list" class="link header__nav__link price__modal_open">Прайс-лист</a>
+                            <div class="price__modal modal">
+                                <div class="price__modal__main modal__main">
+                                    <div class="price__modal__wrap">
+                                        <h3 class="price__modal__heading">
+                                            Оставьте свой телефон
+                                        </h3>
+                                        <form>
+                                            <input type="tel" name="telPrice" id="telPrice" class="form__question__input form__modal__input" placeholder="Ваш телефон">
+                                            <button type="submit" class=" form__question__next form__modal__submit form__question__button form__question__button_dis4">Отправить</button>
+                                        </form>
+                                        <p class="price__modal__desc">
+                                           И мы отправим Вам прайс-лист на наши услуги.
+                                        </p>
+                                    </div>
+                                    <div class="modal__close__wrap">
+                                        <button class="price__modal__close modal__close touch-area">
+                                            <svg class="modal__close__icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 320.591 320.591" style="enable-background:new 0 0 512 512" xml:space="preserve"><g fill="#000000"><path d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z" data-original="#000000"/><path d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z" data-original="#000000"/></g></svg>
+                                        </button>
+                                    </div>
+                                    <h3 class="price__modal__heading price__modal__heading_thanks">
+                                        Спасибо, мы с Вами свяжемся
+                                    </h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <a href="#case" class="link header__nav__link">Кейсы</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#contacts" class="link header__nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="section-hero">
+            <div class="container">
+                <p class="section-hero__desc">Юридическая компания</p>
+                <h1 class="section-hero__heading" 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out-sine"
+                >Бастион</h1>
+                <p class="section-hero__desc">
+                    Мы профессиональная команда специалистов
+                </p>
+                <p class="section-hero__desc">
+                    Защищаем и представляем интересы юридических и физических&#10;
+                    лиц в арбитражных и федеральных судах, органах&#10;
+                    государственной власти и органах местного самоуправления.
+                </p>
+                <a href="#form" class="link-consultation"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out-sine"
+                >
+                    Получить консультацию
+                </a>
+            </div>
+        </section>
+    </div>
+    <main>
+        <div class="paper-bg">
+            <section class="section-about" id="about">
+                <div class="container section-about__container">
+                    <h1 class="heading-gradient"
+                    data-aos="fade-up-right"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out-sine"
+                    >О нас</h1>
+                    <div class="section-about__desc">
+                        <h3 class="section-about__desc__heading">
+                            Мы обеспечим Вам и Вашему бизнесу надежную юридическую поддержку и защиту!
+                        </h3>
+                        <ul class="section-about__desc__list">
+                            <li class="section-about__desc__list__item">
+                                Окажем сопровождение юридической деятельности организации и разрешим вопросы в области гражданского, административного и уголовного законодательства.
+                            </li>
+                            <li class="section-about__desc__list__item">
+                                В штате организации высококвалифицированные сотрудники с большим опытом работы в государственных органах исполнительной власти (ФНС, МВД, Следственный комитет РФ), имеющие широкий спектр профессиональных познаний и опыт проведения мероприятий налогового контроля, доследственных процессуальных проверок, сопровождения дел об административных правонарушениях и уголовных преступлениях экономической и иной направленности. 
+                            </li>
+                            <li class="section-about__desc__list__item">
+                                Кроме того, мы сотрудничаем с квалифицированными адвокатами с целью всесторонней защиты наших клиентов и их бизнеса.
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="section-about__advantages">
+                        <li class="section-about__advantages__item" 
+                        data-aos="fade-up-right"
+                        data-aos-duration="800"
+                        data-aos-easing="ease-in-out-sine">
+                            <p class="section-about__advantages__text">
+                                <strong class="section-about__advantages__text_strong">
+                                    Бесплатно
+                                </strong>&#10;
+                                проконсультируем&#10; по вашей&#10; проблеме
+                            </p>
+                        </li>
+                        <li class="section-about__advantages__item"
+                        data-aos="fade-up-right"
+                        data-aos-duration="800"
+                        data-aos-delay="25"
+                        data-aos-easing="ease-in-out-sine"
+                        >
+                            <p class="section-about__advantages__text">
+                                <strong class="section-about__advantages__text_strong">
+                                    10 лет
+                                </strong>&#10;
+                                средний&#10; опыта наших&#10; специалистов
+                            </p>
+                        </li>
+                        <li class="section-about__advantages__item"
+                        data-aos="fade-up"
+                        data-aos-duration="800"
+                        data-aos-delay="50"
+                        data-aos-easing="ease-in-out-sine"
+                        >
+                            <p class="section-about__advantages__text">
+                                <strong class="section-about__advantages__text_strong">
+                                    1000 дел
+                                </strong>&#10;
+                                выиграно&#10; нашими&#10; специалистами
+                            </p>
+                        </li>
+                        <li class="section-about__advantages__item"
+                        data-aos="fade-up-left"
+                        data-aos-duration="800"
+                        data-aos-delay="75"
+                        data-aos-easing="ease-in-out-sine">
+                            <p class="section-about__advantages__text">
+                                <strong class="section-about__advantages__text_strong">
+                                    10
+                                </strong>&#10;
+                                отраслей&#10; права
+                            </p>
+                        </li>
+                        <li class="section-about__advantages__item"
+                        data-aos="fade-up-left"
+                        data-aos-duration="800"
+                        data-aos-delay="100"
+                        data-aos-easing="ease-in-out-sine"
+                        >
+                            <p class="section-about__advantages__text">
+                                <strong class="section-about__advantages__text_strong">
+                                    100
+                                </strong>&#10;
+                                специалистов с&#10; опытом работы&#10; в гос. структурах
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section-services" id="services">
+                <div class="container section-services__container">
+                    <h1 class="heading-gradient"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out-sine"
+                    >Услуги</h1>
+                    <dl class="section-services__list">
+                        <div class="section-services__list__item"
+                        data-aos="fade-left"
+                        data-aos-duration="700"
+                        data-aos-easing="ease-in-out-sine">
+                            <div class="section-services__list__wrap">
+                                <svg class="section-services__svg" viewBox="0 0 52 52">
+                                    <use xlink:href="images/sprite.svg#ugdela"></use>
+                                </svg>
+                                <dt class="section-services__def">Защита по уголовным делам</dt>
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="section-services__icon">
+                                    <rect y="13.75" width="30" height="2.5"/>
+                                    <rect x="13.75" y="30" width="30" height="2.5" transform="rotate(-90 13.75 30)"/>
+                                </svg>
+                                <dd class="section-services__mean">
+                                    Комплексная защита на всех этапах уголовного судопроизводства, в том числе в ходе доследственных проверок.&#10;
+                                    Большой опыт защиты по экономическим и должностным составам преступлений.&#10;
+                                    Оперативно выезжаем на обыски и задержания граждан. Умеем представлять интересы потерпевших и сопровождать на допросы свидетелей
+                                </dd>
+                            </div>
+                            <a href="#form" class="link-consultation link-consultation_white">
+                                Получить консультацию
+                            </a>
+                        </div>
+                        <div class="section-services__list__item"
+                        data-aos="fade-right"
+                        data-aos-duration="700"
+                        data-aos-delay="25"
+                        data-aos-easing="ease-in-out-sine">
+                            <div class="section-services__list__wrap">
+                                <svg class="section-services__svg" viewBox="0 0 52 52">
+                                    <use xlink:href="images/sprite.svg#arbitrazh"></use>
+                                </svg>
+                                <dt class="section-services__def">АРБИТРАЖ</dt>
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="section-services__icon">
+                                    <rect y="13.75" width="30" height="2.5"/>
+                                    <rect x="13.75" y="30" width="30" height="2.5" transform="rotate(-90 13.75 30)"/>
+                                </svg>
+                                <dd class="section-services__mean">
+                                    Имеем большой опыт успешного представления интересов доверителей в арбитражных спорах.&#10;
+                                    За счет командной работы и большого количества опытных специалистов имеем возможность комплексно представлять интересы различных сторон в делах о несостоятельности (банкротстве), в том числе, в рамках споров о субсидиарной ответственности и возмещении убытков.&#10;
+                                    С точки зрения актуальной правоприменительной практики постоянно консультируем представителей бизнеса по поводу ведения хозяйственной деятельности; готовим предпринимателей к проверкам государственных органов и оспариваем результаты таких проверок.
+                                </dd>
+                            </div>
+                            <a href="#form" class="link-consultation link-consultation_white">
+                                Получить консультацию
+                            </a>
+                        </div>
+                        <div class="section-services__list__item"
+                        data-aos="fade-left"
+                        data-aos-duration="700"
+                        data-aos-delay="50"
+                        data-aos-easing="ease-in-out-sine">
+                            <div class="section-services__list__wrap">
+                                <svg class="section-services__svg" viewBox="0 0 52 52">
+                                    <use xlink:href="images/sprite.svg#ursoprovozh"></use>
+                                </svg>
+                                <dt class="section-services__def">ЮРИДИЧЕСКОЕ СОПРОВОЖДЕНИЕ БИЗНЕСА</dt>
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="section-services__icon">
+                                    <rect y="13.75" width="30" height="2.5"/>
+                                    <rect x="13.75" y="30" width="30" height="2.5" transform="rotate(-90 13.75 30)"/>
+                                </svg>
+                                <dd class="section-services__mean">
+                                    Предлагаем услугу комплексного юридического сопровождения для представителей малого и среднего бизнеса.&#10;
+                                    Разработка типовых договоров на поставку/продажу продукции; ведение преддоговорных споров и подготовка протоколов разногласий к проектам договоров; подготовка, направление и контроль исполнения претензий контрагентами; формирование пакета документов для подачи искового заявления, юридическое заполнение недостающих доказательств для дальнейшего судебного разбирательства; представление интересов в судах всех инстанций, вплоть до вступления решения в законную силу и сопровождение исполнительного производства до этапа получения денежных средств; создание комплекса локальных актов на предприятии (должностных инструкций, документов по обработке персональных данных, положений о структурных подразделениях организации, сопровождение корпоративных процедур, включая подготовку и проведение собраний акционеров и многое другое).&#10;
+                                    У нас обычно больше опыта оценки критических рисков тех или иных правовых факторов для бизнеса, чем у работников юридической службы предприятия, в связи с чем выше эффективность наших правовых рекомендаций и меньше шансов существенных финансовых потерь при следовании нашим советам.  Мы умеем работать в тесном взаимодействии с юристами и юридической службой.&#10;
+                                    Нанять нас для помощи в текущей деятельности бизнеса обойдётся дешевле, чем оплачивать труд юристов для разрешения возникших правовых проблем по результатам действий без эффективного правового сопровождения
+                                </dd>
+                            </div>
+                            <a href="#form" class="link-consultation link-consultation_white">
+                                Получить консультацию
+                            </a>
+                        </div>
+                        <div class="section-services__list__item"
+                        data-aos="fade-right"
+                        data-aos-duration="700"
+                        data-aos-delay="75"
+                        data-aos-easing="ease-in-out-sine">
+                            <div class="section-services__list__wrap">
+                                <svg class="section-services__svg" viewBox="0 0 52 52">
+                                    <use xlink:href="images/sprite.svg#bankrotstvo"></use>
+                                </svg>
+                                <dt class="section-services__def">Банкротство физических лиц</dt>
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="section-services__icon">
+                                    <rect y="13.75" width="30" height="2.5"/>
+                                    <rect x="13.75" y="30" width="30" height="2.5" transform="rotate(-90 13.75 30)"/>
+                                </svg>
+                                <dd class="section-services__mean">
+                                    Консультация, квалифицированная и честная оценка перспектив, полное юридическое сопровождение процедуры банкротства. Особое внимание обращаем на риски оспаривания сделок с недвижимостью и транспортными средствами, проводим финансовые анализ движения по банковским счетам перед запуском процедуры.&#10;
+                                    Ведём переговоры с кредиторами, добиваемся реструктуризации задолженности, имеем опыт завершение дела мировым соглашением, умеем оспаривать действия финансового управляющего и защищать имущество от взыскания.&#10;
+                                    Используем правовой механизм банкротства для получения денег с должника, возвращаем выведенное имущество в банкротную массу, исключаем неожиданные требования дружественных должнику кредиторов, умеем искать зарубежные активы банкротящегося лица.
+                                </dd>
+                            </div>
+                            <a href="#form" class="link-consultation link-consultation_white">
+                                Получить консультацию
+                            </a>
+                        </div>
+
+                        <div class="section-services__list__item_double">
+                            <div class="section-services__list__item section-services__list__item_min"
+                            data-aos="fade-up-right"
+                            data-aos-duration="700"
+                            data-aos-delay="100"
+                            data-aos-easing="ease-in-out-sine"
+                            >
+                                <div class="section-services__list__wrap">
+                                    <svg class="section-services__svg" viewBox="0 0 52 52">
+                                        <use xlink:href="images/sprite.svg#nalog"></use>
+                                    </svg>
+                                    <dt class="section-services__def">Налоговые споры</dt>
+                                </div>
+                                <a href="#form" class="link-consultation link-consultation_white">
+                                    Получить консультацию
+                                </a>
+                            </div>
+    
+                            <div class="section-services__list__item section-services__list__item_min"
+                            data-aos="fade-up-left"
+                            data-aos-duration="700"
+                            data-aos-delay="100"
+                            data-aos-easing="ease-in-out-sine"
+                            >
+                                <div class="section-services__list__wrap">
+                                    <svg class="section-services__svg" viewBox="0 0 52 52">
+                                        <use xlink:href="images/sprite.svg#trudspor"></use>
+                                    </svg>
+                                    <dt class="section-services__def">Трудовые споры</dt>
+                                </div>
+                                <a href="#form" class="link-consultation link-consultation_white">
+                                    Получить консультацию
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="section-services__list__item"
+                        data-aos="fade-up"
+                        data-aos-duration="700"
+                        data-aos-delay="125"
+                        data-aos-easing="ease-in-out-sine"
+                        >
+                            <div class="section-services__list__wrap">
+                                <svg class="section-services__svg" viewBox="0 0 52 52">
+                                    <use xlink:href="images/sprite.svg#adminspor"></use>
+                                </svg>
+                                <dt class="section-services__def">Административные споры</dt>
+                            </div>
+                            <a href="#form" class="link-consultation link-consultation_white">
+                                Получить консультацию
+                            </a>
+                        </div>
+                    </dl>
+                </div>
+            </section>
+        </div>
+        <section class="section-cases" id="case">
+            <div class="container section-cases__container">
+                <h1 class="heading-gradient heading-gradient_noGradient"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out-sine"
+                >
+                    Кейсы
+                </h1>
+                <div class="swiper swiperCases">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <article class="case">
+                                <dfn class="case__category">
+                                    Административные&#10; споры
+                                </dfn>
+                                <dl class="case__desc simplebar-scrollable-y" data-simplebar data-simplebar-auto-hide="false">
+                                    <dt class="case__def">Что случилось:</dt>
+                                    <dd class="case__mean">Клиентом юридической компании, XYZ Corporation, является крупная строительная компания, специализирующаяся на проектировании и строительстве коммерческих недвижимых объектов. Во время выполнения проекта по строительству офисного здания в центре города, XYZ Corporation столкнулась с серьезными административными проблемами. Орган местного самоуправления предъявил компании набор административных штрафов и ограничений за нарушение различных местных строительных нормативов и правил.</dd>
+        
+                                    <dt class="case__def">Проведенная работа:</dt>
+                                    <dd class="case__mean">
+                                        Клиентом юридической компании, XYZ Corporation, является крупная строительная компания, специализирующаяся на проектировании и строительстве коммерческих недвижимых объектов. Во время выполнения проекта по строительству офисного здания в центре города, XYZ Corporation столкнулась с серьезными административными проблемами. Орган местного самоуправления предъявил компании набор административных штрафов и ограничений за нарушение различных местных строительных нормативов и правил.
+                                    </dd>
+        
+                                    <dt class="case__def">Результат:</dt>
+                                    <dd class="case__mean">Благодаря тщательной подготовке и квалифицированному представлению интересов клиента в суде, юридическая компания сумела добиться значительного снижения наложенных административных штрафов и ограничений. Суд признал, что некоторые из них были наложены незаконно или необоснованно. Кроме того, были предприняты дополнительные юридические шаги для обеспечения соблюдения всех необходимых правил и норм в ходе завершения проекта строительства, минимизируя риски дальнейших административных споров для XYZ Corporation.</dd>
+                                </dl>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="case">
+                                <dfn class="case__category">
+                                    Административные&#10; споры
+                                </dfn>
+                                <dl class="case__desc simplebar-scrollable-y" data-simplebar data-simplebar-auto-hide="false">
+                                    <dt class="case__def">Что случилось:</dt>
+                                    <dd class="case__mean">Клиентом юридической компании, XYZ Corporation, является крупная строительная компания, специализирующаяся на проектировании и строительстве коммерческих недвижимых объектов. Во время выполнения проекта по строительству офисного здания в центре города, XYZ Corporation столкнулась с серьезными административными проблемами. Орган местного самоуправления предъявил компании набор административных штрафов и ограничений за нарушение различных местных строительных нормативов и правил.</dd>
+        
+                                    <dt class="case__def">Проведенная работа:</dt>
+                                    <dd class="case__mean">
+                                        Клиентом юридической компании, XYZ Corporation, является крупная строительная компания, специализирующаяся на проектировании и строительстве коммерческих недвижимых объектов. Во время выполнения проекта по строительству офисного здания в центре города, XYZ Corporation столкнулась с серьезными административными проблемами. Орган местного самоуправления предъявил компании набор административных штрафов и ограничений за нарушение различных местных строительных нормативов и правил.
+                                    </dd>
+        
+                                    <dt class="case__def">Результат:</dt>
+                                    <dd class="case__mean">Благодаря тщательной подготовке и квалифицированному представлению интересов клиента в суде, юридическая компания сумела добиться значительного снижения наложенных административных штрафов и ограничений. Суд признал, что некоторые из них были наложены незаконно или необоснованно. Кроме того, были предприняты дополнительные юридические шаги для обеспечения соблюдения всех необходимых правил и норм в ходе завершения проекта строительства, минимизируя риски дальнейших административных споров для XYZ Corporation.</dd>
+                                </dl>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="case">
+                                <dfn class="case__category">
+                                    Административные&#10; споры
+                                </dfn>
+                                <dl class="case__desc simplebar-scrollable-y" data-simplebar data-simplebar-auto-hide="false">
+                                    <dt class="case__def">Что случилось:</dt>
+                                    <dd class="case__mean">Клиентом юридической компании, XYZ Corporation, является крупная строительная компания, специализирующаяся на проектировании и строительстве коммерческих недвижимых объектов. Во время выполнения проекта по строительству офисного здания в центре города, XYZ Corporation столкнулась с серьезными административными проблемами. Орган местного самоуправления предъявил компании набор административных штрафов и ограничений за нарушение различных местных строительных нормативов и правил.</dd>
+        
+                                    <dt class="case__def">Проведенная работа:</dt>
+                                    <dd class="case__mean">
+                                        Клиентом юридической компании, XYZ Corporation, является крупная строительная компания, специализирующаяся на проектировании и строительстве коммерческих недвижимых объектов. Во время выполнения проекта по строительству офисного здания в центре города, XYZ Corporation столкнулась с серьезными административными проблемами. Орган местного самоуправления предъявил компании набор административных штрафов и ограничений за нарушение различных местных строительных нормативов и правил.
+                                    </dd>
+        
+                                    <dt class="case__def">Результат:</dt>
+                                    <dd class="case__mean">Благодаря тщательной подготовке и квалифицированному представлению интересов клиента в суде, юридическая компания сумела добиться значительного снижения наложенных административных штрафов и ограничений. Суд признал, что некоторые из них были наложены незаконно или необоснованно. Кроме того, были предприняты дополнительные юридические шаги для обеспечения соблюдения всех необходимых правил и норм в ходе завершения проекта строительства, минимизируя риски дальнейших административных споров для XYZ Corporation.</dd>
+                                </dl>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="switch">
+                    <div class="switch__wrap switch__prev">
+                        <svg class="switch__button switch__button_prev" viewBox="0 0 15 16">
+                            <use xlink:href="images/sprite.svg#strelka"></use>
+                        </svg>
+                    </div>
+                    <div class="switch__wrap switch__next">
+                        <svg class="switch__button switch__button_next" viewBox="0 0 15 16">
+                            <use xlink:href="images/sprite.svg#strelka"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="form" id="form">
+            <div class="container section-form__container">
+                <form class="form__body swiper" 
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out-sine"
+                id="form_quiz"
+                action="https://jsonplaceholder.typicode.com/posts"
+                method="post"
+                >
+                    <div class="swiper-wrapper">
+                        <div class="form__desc swiper-slide">
+                            <h1 class="heading-gradient heading-smaller">
+                                Получите консультацию&#10; юриста
+                            </h1>
+                            <p class="form__desc__p">
+                                Ответьте на четыре вопроса, и мы разберём Ваш случай. &#10; После прохождения опроса Вы получите &#10; <strong class="form__desc__p__strong">бесплатную консультацию от нашего юриста</strong>
+                            </p>
+                            <button class="link-consultation link-question form__question__next">
+                                ответить на вопросы
+                            </button>
+                        </div>
+                        <div class="form__question swiper-slide">
+                            <div class="form__question__wrap-heading">
+                                <span class="form__question__number">01</span>
+                                <h3 class="form__question__heading">Консультация нужна</h3>
+                            </div>
+                            <div class="form__question__wrap-body">
+                                <label for="legal" class="form__question__label">
+                                    <input class="form__question__radio" type="radio" name="UrStatus" id="legal" value="частное">
+                                    <span class="form__question__radio_custom">
+                                        Физическому лицу
+                                    </span>
+                                </label>
+                                <label for="private" class="form__question__label">
+                                    <input class="form__question__radio" type="radio" name="UrStatus" id="private" value="юридическое">
+                                    <span class="form__question__radio_custom">
+                                        Юридическому лицу
+                                    </span>
+                                </label>
+                            </div>
+                            <button class="form__question__next form__question__button form__question__button_dis form__question__button_dis1">Далее</button>
+                        </div>
+                        <div class="form__question swiper-slide">
+                            <div class="form__question__wrap-heading">
+                                <span class="form__question__number">02</span>
+                                <h3 class="form__question__heading">Что вас интересует?</h3>
+                            </div>
+                            <div class="form__question__wrap-body_2">
+                                <label for="bankrotstvo" class="form__question__label">
+                                    <input class="form__question__radio" type="radio" name="usluga" id="bankrotstvo" value="bankrotstvo">
+                                    <span class="form__question__radio_custom">
+                                        Банкротство
+                                    </span>
+                                </label>
+                                <label for="admin" class="form__question__label">
+                                    <input class="form__question__radio" type="radio" name="usluga" id="admin" value="admin">
+                                    <span class="form__question__radio_custom">
+                                        Административные споры
+                                    </span>
+                                </label>
+                                <label for="trud" class="form__question__label">
+                                    <input class="form__question__radio" type="radio" name="usluga" id="trud" value="trud">
+                                    <span class="form__question__radio_custom">
+                                        Трудовые споры
+                                    </span>
+                                </label>
+                                <label for="ugZachita" class="form__question__label">
+                                    <input class="form__question__radio" type="radio" name="usluga" id="ugZachita" value="ugZachita">
+                                    <span class="form__question__radio_custom">
+                                        Уголовная защита
+                                    </span>
+                                </label>
+                                <label for="drugoe" class="form__question__label">
+                                    <input class="form__question__radio" type="radio" name="usluga" id="drugoe" value="drugoe">
+                                    <span class="form__question__radio_custom">
+                                        Другое
+                                    </span>
+                                </label>
+                                <div class="form__question__wrap-button">
+                                    <button class="form__question__prev form__question__button">Назад</button>
+                                    <button class="form__question__next form__question__button form__question__button_dis form__question__button_dis2">Далее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__question swiper-slide">
+                            <div class="form__question__wrap-heading">
+                                <span class="form__question__number">03</span>
+                                <h3 class="form__question__heading">Опишите свою ситуацию</h3>
+                            </div>
+                            <div class="form__question__wrap-body_3">
+                                <textarea class="form__question__opisanie" name="opisanie" placeholder="Опишите ситуацию"></textarea>
+                                <div class="form__question__wrap-button">
+                                    <button class="form__question__prev form__question__button">Назад</button>
+                                    <button class="form__question__next form__question__button">Далее</button>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="form__question swiper-slide">
+                            <div class="form__question__wrap-heading">
+                                <span class="form__question__number">04</span>
+                                <h3 class="form__question__heading">Оставьте свои данные, и мы свяжемся с Вами</h3>
+                            </div>
+                            <div class="form__question__wrap-body_3">
+                                <input type="text" name="name" placeholder="Ваше имя" class="form__question__input" maxlength="32" required> 
+                                <input type="tel" name="telQuestion" placeholder="Ваш телефон" class="form__question__input" id="tel" required >
+                                <div class="form__question__wrap-button">
+                                    <button class="form__question__prev form__question__button">Назад</button>
+                                    <input  type="submit" class="form__question__next form__question__button form__question__button_dis form__question__button_dis3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__question swiper-slide">
+                            <h3 class="form__thanks">Спасибо, мы свяжемся c Вами в ближайшее время</h3>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+
+
+            
+        </section>
+        <section class="section-contacts" id="contacts">
+            <div class="section-contacts__map" id="map"></div>
+            <article class="contacts-card"
+            data-aos="fade-right"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out-sine"
+            >
+                <h1 class="heading-gradient">
+                    Контакты
+                </h1>
+                <dl class="contacts-card__list">
+                    <dt class="contacts-card__name">Адрес:</dt>
+                    <dd class="contacts-card__def">
+                        445051, Самарская область, г. Тольятти &#10;
+                        Приморский бульвар, 1 «В»
+                    </dd>
+                    <dt class="contacts-card__name">Эл. почта:</dt>
+                    <dd class="contacts-card__def">
+                        <a href="mailto:mail@bastionlaw.ru" class="">mail@bastionlaw.ru</a>
+                    </dd>
+                    <dt class="contacts-card__name">Телефон:</dt>
+                    <dd class="contacts-card__def">
+                        <a href="tel:+79234574660">+7 (923) 457-46-60</a>
+                    </dd>
+                    <dt class="contacts-card__name">Режим работы:</dt>
+                    <dd class="contacts-card__def">
+                        Пн-Пт: 9:00-18:00
+                    </dd>
+                </dl>
+            </article>
+        </section>
+    </main>
+    <footer class="footer"
+    data-aos="fade-down"
+    data-aos-duration="500"
+    data-aos-easing="ease-in-out-sine"
+    >
+        <div class="container footer__container">
+            <div class="footer__logo">
+                <img src="images/bastion.svg" alt="Бастион" class="footer__logo__img">
+            </div>
+            <ul class="footer__contacts">
+                <li class="footer__contacts__item">
+                    <a href="mailto:ooo.bastion2022@mail.ru" class="footer__contacts__link">ooo.bastion2022@mail.ru</a>
+                </li>
+                <li class="footer__contacts__item">
+                    <a href="tel:+79234574660" class="footer__contacts__link">+7 (923) 457-46-60</a>
+                </li>
+                <li class="footer__contacts__item">
+                    <a href="#contacts" class="footer__contacts__link">Самарская область, г. Тольятти Приморский бульвар, 1 «В»</a>
+                </li>
+                <li class="footer__contacts__item">
+                    <a href="#header" class="footer__contacts__link footer__contacts__link_grey">ооо бастион © 2024 г.</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

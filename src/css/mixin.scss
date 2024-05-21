@@ -1,0 +1,49 @@
+@import 'var.scss';
+@mixin sectionHeadFont {
+    font: {
+    family: 'Bebas Neue', sans-serif;
+    weight: 700;
+    }
+    line-height: 100%;
+}
+
+@mixin sectionMainFont {
+    font: {
+    family: "Ubuntu", sans-serif;
+    weight: 400;
+    }
+    line-height: 100%;
+}
+
+@mixin gradientSecondFont {
+    background: $gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin flex{
+    display: flex;
+    align-items: center;
+}
+
+@mixin paperBg{
+    background: url('images/filterBumaga.webp');
+    background-size: cover;
+    background-position: center;
+    color: $mainColorBlack;
+}
+
+@mixin boxModelInput{
+    width: clamp(310px, 100%, 1200px);
+    padding: clamp(32px, 6vw, 58px) clamp(10px, 4vw, 40px);
+    border-radius: 6px;
+}
+
+@mixin placeholder{
+    @include sectionMainFont;
+    font-weight: 700;
+    font-size: $secondTextSize;
+    color: $sidebarColor;
+    text-transform: uppercase;
+}
